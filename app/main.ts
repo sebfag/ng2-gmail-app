@@ -1,4 +1,5 @@
 import {bootstrap}    from '@angular/platform-browser-dynamic';
-import {AppComponent} from './app.component';
+import {AppComponent} from './component/app.component';
+import {GmailService} from './service/Gmail.service';
 
-bootstrap(AppComponent);
+bootstrap(AppComponent, [GmailService]);

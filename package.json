@@ -1,7 +1,7 @@
 {
-  "name": "angular2-quickstart",
+  "name": "ng2-gmail-app",
   "version": "1.0.0",
-  "description": "QuickStart package.json from the documentation, supplemented with testing support",
+  "description": "This is my graduation project. I'm trying to make Gmail client app using Angular2.",
   "scripts": {
     "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
     "docker-build": "docker build -t ng2-quickstart .",
