@@ -9,7 +9,7 @@ import {UserModel} from '../model/User.model';
 @Injectable()
 export class UserService {
 
-    gmailApi:any;
+    private gmailApi:any;
 
     private loggedIn:boolean = false;
     private user:UserModel;
@@ -28,7 +28,7 @@ export class UserService {
                     let request = gmailApi.getProfile({userId: 'me'});
 
                     request.execute((response:any) => {
-                        if (result && !result.error) {
+                        if (response && !response.error) {
                             let user = new UserModel(response.emailAddress, response.threadsTotal);
                             this.user = user;
                             console.log(user);
